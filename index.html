@@ -1073,7 +1073,7 @@ function closeTV(){const tv=$("#tv");if(tv)tv.remove()}
 /* ---------- AI 内容分析（由后台接口调用大模型） ----------
    AI_ENDPOINT 填你部署好的后台接口地址（见 ai-proxy-worker.js）。
    API Key 只放在后台，网页里不出现。留空则不启用，显示原来的简介。 */
-const AI_ENDPOINT="youpian-ai.caoluwang.workers.dev";
+const AI_ENDPOINT="https://youpian-ai.caoluwang.workers.dev";
 const aiReady=()=>!!AI_ENDPOINT;
 const aiMem={}, aiBusy={};
 function aiSig(it){return [it.t,it.place,it.cat,it.desc].join("|")}
